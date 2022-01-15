@@ -23,10 +23,16 @@ li{
 .common-btn{
     padding: 10px 24px;
     border-radius: 40px;
+    font-size: 16px;
     font-weight: 500;
     border: none;
     background: #E02C6D;
     color: white;
+    transition: all .5s;
+}
+.common-btn:hover{
+    transform: scale(1.2);
+    animation-timing-function: ease-in-out;
 }
 .fa-arrow-right{
     margin-left: 5px;
@@ -82,6 +88,7 @@ li{
     margin: 16px 0;
     color: #3a3a3a;
     font-weight: 600;
+    text-align: justify;
 }
 .influencer-img{
     width: 440px;
@@ -98,6 +105,9 @@ li{
     margin: 0 30px;
 }
 /* css code for popular collection */
+.change-color{
+    color: #E21717;
+}
 .popular-collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,10 +219,13 @@ input:last-child{
     background: #fe4c40;
     border-radius: 30px;
     margin-top: 10px;
+    color: white;
+    font-weight: 500;
 }
 textarea{
     resize: none;
 }
+
 /* footer-section */
 footer{
     background-color: #0A0826;
