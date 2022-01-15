@@ -28,7 +28,7 @@ li{
     background: #E02C6D;
     color: white;
 }
-.common-btn > span{
+.fa-arrow-right{
     margin-left: 5px;
 }
 .main-container{
@@ -59,6 +59,9 @@ li{
     color: #3a3a3a;
     font-weight: 600;
 }
+.fa-search, .fa-shopping-cart{
+    font-size: 20px;
+}
 /*-------- css code for influencer-section is start here ---------*/
 .influencer{
     display: flex;
@@ -86,11 +89,40 @@ li{
 .influencer-img img{
     width: 100%;
 }
+/* css code for company-logo */
+.company-logo{
+    display: flex;
+    margin: 90px 0;
+}
+.company-logo li{
+    margin: 0 30px;
+}
 /* css code for popular collection */
 .popular-collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+}
+.popular-collection-wrapper{
+    position: relative;
+}
+.section-title{
+    font-size: 28px;
+    color: #3a3a3a;
+    font-weight: 600;
+    text-align: center;
+    margin: 120px 0 40px 0;
+}
+h2.section-title:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    background: #ff5200;
+    width: 80px;
+    border-bottom: 4px solid #ff5200;
+    margin-top: 2px;
 }
 .popular-collection{
     background-color: #fff;
@@ -105,7 +137,7 @@ li{
     color: #18191F;
 }
 .price{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
     margin-top: 6px;
@@ -118,7 +150,7 @@ li{
     font-size: 14px;
     font-weight: bold;
 }
-.fas{
+.filled, .empty{
     font-size: 12px;
 }
 .filled{
@@ -126,6 +158,60 @@ li{
 }
 .empty{
     color: #E02C6D;
+}
+.see-more-btn{
+    font-size: 14px;
+    font-weight: 700;
+    color: #E02C6D;
+    margin-top: 35px;
+    float: right;
+}
+/* customer feedback section */
+.chat-section-wrapper{
+    position: relative;
+}
+.chat-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.chat-img{
+    width: 50%;
+}
+.chat-img img{
+    width: 100%;
+}
+.chat{
+    background: #fff;
+    padding: 20px;
+}
+.chat-color{
+    color: #fe4c40;
+}
+.chat h1{
+    font-size: 30px;
+    color: #3a3a3a;
+}
+label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+input, textarea{
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    background: #eee;
+    border: none;
+}
+input:last-child{
+    background: #fe4c40;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+textarea{
+    resize: none;
 }
 /* footer-section */
 footer{
