@@ -335,4 +335,49 @@ footer{
         display: none;
     };
 };
-/*------------- The css for mobile device media query is end here  -------------*/
+/* css for tablet device */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .menu-item ul li{
+        margin: 10px 0;
+    }
+    .influencer h1{
+        font-size: 35px;
+    }
+    .popular-collection:last-child{
+        justify-content: center;
+    }
+    .influencer-img{
+        width: 60%;
+    }
+    .influencer-img img{
+        width: 100%;
+        text-align: right;
+    }
+    .company-logo{
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .popular-collections{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+    }
+    .popular-collection-img img{
+        width: 100%;
+    }
+    .see-more-btn{
+        margin-right: 15px;
+    }
+    .chat-section{
+        margin: 15px;
+    }
+}
