@@ -29,6 +29,7 @@ li{
     background: #E02C6D;
     color: white;
     transition: all .5s;
+    width: 178px;
 }
 .common-btn:hover{
     transform: scale(1.2);
@@ -100,6 +101,8 @@ li{
 .company-logo{
     display: flex;
     margin: 90px 0;
+    justify-content: center;
+    font-size: xxx-large;
 }
 .company-logo li{
     margin: 0 30px;
@@ -260,3 +263,73 @@ footer{
     border-radius: 50%;
     background-color: #22213c;
 }
+/******************************** Media queries *********************************/
+@media only screen and (max-width: 995px) {
+    .container{
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .influencer{
+        flex-direction: column;
+    }
+    .influencer-detail{
+        width: 100%;
+    }
+    .influencer-detail h1{
+        font-size: 30px;
+        font-weight: 600;    
+        text-align: center;
+    }
+    .influencer-img{
+        width: 100%;
+        text-align: center;
+        order: -1;
+        margin-bottom: 50px;
+        margin-top: -25px;
+    }
+    .influencer-img img{
+        width: 257px;
+    }
+    .common-btn{
+        width: 178px;
+        text-align: center;
+    }
+    .company-logo{
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .company-logo li{
+        margin: 0 9px;
+    }
+    .company-loto li img{
+        font-size: 20px;
+    }
+    .popular-collections{
+        grid-template-columns: 1fr;
+        margin: 0 15px;
+    }
+    .popular-collection{
+        width: 100%;
+    }
+    .popular-collection-img img{
+        width: 100%;
+    }
+    .see-more-btn{
+        margin-right: 15px;
+    }
+    .chat-section{
+        flex-direction: column;
+        margin: 15px;
+    } 
+    .logo{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .menu-item{
+        display: none;
+    };
+};
