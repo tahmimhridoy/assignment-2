@@ -184,13 +184,15 @@ h2.section-title:after {
     position: relative;
 }
 .chat-section{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .chat-img{
-    width: 50%;
+    width: 100%;
+    margin: auto;
 }
 .chat-img img{
     width: 100%;
@@ -264,7 +266,7 @@ footer{
     background-color: #22213c;
 }
 /******************************** Media queries *********************************/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 688px) {
     .container{
         width: 100%;
     }
@@ -321,7 +323,7 @@ footer{
         margin-right: 15px;
     }
     .chat-section{
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
         margin: 15px;
     } 
     .logo{
@@ -333,3 +335,4 @@ footer{
         display: none;
     };
 };
+/*------------- The css for mobile device media query is end here  -------------*/
